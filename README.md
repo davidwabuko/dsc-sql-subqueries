@@ -263,7 +263,7 @@ WHERE officeCode IN (
     JOIN employees
         USING(officeCode)
     GROUP BY 1
-    HAVING COUNT(employeeNumber) >= 5
+    HAVING COUNT(employeeNumber) <= 5
 )
 ;
 """
